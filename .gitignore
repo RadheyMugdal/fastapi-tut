@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+
+# Databases (SQLite, etc.)
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing and Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Logging
+*.log
+logs/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Docker (Optional - ignore if you want to commit them)
+.dockerignore
+
+Lib/
+lib64/
+bin/
+include/
+share/
