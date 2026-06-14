@@ -63,5 +63,18 @@ def update_product(productId:int,product:ProductDTO):
         "status":"Product not found for this id {productId}",
         
     }
+
+@app.delete('/products/{productId}')
+def delete_product(productId:int):
+    for index,i in enumerate(products):
+        if i.get('id')==productId:
+            delete_product=products.pop(index)
+            return {
+                "status":"Product deleted successfully",
+                "data":delete_product
+            }
+        return {
+            "status":"Product not found for this id {productId}",
+        }
 # pydantic is used for data validation in fastapi
 # it helps us to define the structure of the data we want to receive in the request body and validate it before processing it.
