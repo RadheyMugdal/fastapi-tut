@@ -11,6 +11,8 @@ __pycache__/
 venv/
 ENV/
 env/
+Scripts/
+pyvenv.cfg
 
 # Environment variables and secrets
 .env
